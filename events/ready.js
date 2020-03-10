@@ -11,7 +11,7 @@ module.exports = async (client) => {
 	Logger.event(
 		Logger.setColor('#c0433f', `Client online ! Client ${
 			Logger.setColor('orange', client.user.username, '#c0433f')
-		} has ${client.guilds.size + Logger.setColor('#c0433f')} guilds, it sees ${client.users.size + Logger.setColor('#c0433f')} members.`)
+		} has ${client.guilds.cache.size + Logger.setColor('#c0433f')} guilds, it sees ${client.users.cache.size + Logger.setColor('#c0433f')} members.`)
 	);
 	
 	Logger.event('Date : ' + Logger.setColor('yellow', DateTime.local().toFormat('TT')));
